@@ -1,0 +1,30 @@
+PODS:
+  - FSCalendar (2.8.4)
+  - Realm (10.25.1):
+    - Realm/Headers (= 10.25.1)
+  - Realm/Headers (10.25.1)
+  - RealmSwift (10.25.1):
+    - Realm (= 10.25.1)
+  - SwiftyStoreKit (0.16.1)
+
+DEPENDENCIES:
+  - FSCalendar
+  - RealmSwift
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  trunk:
+    - FSCalendar
+    - Realm
+    - RealmSwift
+    - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  Realm: 1a6e9b4f6983711655d8c0bcb6d2d29c3afbb1f3
+  RealmSwift: e72669550d27082aa4fad5d176f5076cfe806245
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+
+PODFILE CHECKSUM: 246f99ce6f6109123c9499d6e81395e9aecb954c
+
+COCOAPODS: 1.11.3

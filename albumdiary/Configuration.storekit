@@ -1,0 +1,100 @@
+{
+  "identifier" : "3B234694",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "1A2E7BB0",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "購入すると５枚分のPDFを印刷または保存可能です。",
+          "displayName" : "５枚枠を購入",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "singlePrintTicket",
+      "referenceName" : "印刷券単発",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "19964D26",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "購入すると５0枚分のPDFを印刷または保存可能です。",
+          "displayName" : "50枚枠を購入",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "multiPrintTicket",
+      "referenceName" : "印刷券まとめ買い",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_billingIssuesEnabled" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "ja",
+    "_storefront" : "JPN",
+    "_storeKitError" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "751BFA08",
+      "localizations" : [
+
+      ],
+      "name" : "oneMonth",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "306C6B8C",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "購入後、１ヶ月間毎日PDFを印刷または保存可能です。",
+              "displayName" : "サブスクリプション",
+              "locale" : "ja"
+            }
+          ],
+          "productID" : "subscPrintTicket",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "サブスクリプション",
+          "subscriptionGroupID" : "751BFA08",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 2
+  }
+}

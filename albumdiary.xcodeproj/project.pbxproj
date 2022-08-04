@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341EABE028362C7A00DAE91B /* albumdiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EABDF28362C7A00DAE91B /* albumdiaryUITests.swift */; };
+		341EABE228362C7A00DAE91B /* albumdiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341EABE128362C7A00DAE91B /* albumdiaryUITestsLaunchTests.swift */; };
+		344F6EDA275CBC6F00B63625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F6ED9275CBC6F00B63625 /* AppDelegate.swift */; };
+		344F6EDC275CBC6F00B63625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F6EDB275CBC6F00B63625 /* SceneDelegate.swift */; };
+		344F6EE3275CBC7200B63625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344F6EE2275CBC7200B63625 /* Assets.xcassets */; };
+		344F6EE6275CBC7200B63625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344F6EE4275CBC7200B63625 /* LaunchScreen.storyboard */; };
+		344F6F42275CC09C00B63625 /* ConfirmCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F6F40275CC09C00B63625 /* ConfirmCalenderViewController.swift */; };
+		344F6F43275CC09C00B63625 /* ConfirmCalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344F6F41275CC09C00B63625 /* ConfirmCalenderViewController.xib */; };
+		344F6F4D275CC0F200B63625 /* FrontCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F6F4B275CC0F200B63625 /* FrontCoverViewController.swift */; };
+		344F6F4E275CC0F200B63625 /* FrontCoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344F6F4C275CC0F200B63625 /* FrontCoverViewController.xib */; };
+		3461FBC7281E188B00B0DDE5 /* DiaryLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461FBC6281E188B00B0DDE5 /* DiaryLayoutManager.swift */; };
+		3464996E27C0B070009A91DA /* DiaryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464996D27C0B070009A91DA /* DiaryEntity.swift */; };
+		3464998327C0BB7C009A91DA /* EditTextModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464998127C0BB7C009A91DA /* EditTextModalViewController.swift */; };
+		3464998427C0BB7C009A91DA /* EditTextModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3464998227C0BB7C009A91DA /* EditTextModalViewController.xib */; };
+		3464998827C0BC82009A91DA /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464998727C0BC82009A91DA /* PresentationController.swift */; };
+		3464998E27C2221E009A91DA /* CalenderUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464998D27C2221E009A91DA /* CalenderUtility.swift */; };
+		346840FD2837330800CD5A16 /* RealmUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346840FC2837330800CD5A16 /* RealmUtility.swift */; };
+		347696D9283B699400398CE9 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696D7283B699400398CE9 /* PDFViewController.swift */; };
+		347696DA283B699400398CE9 /* PDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347696D8283B699400398CE9 /* PDFViewController.xib */; };
+		347696DD283B6C8800398CE9 /* PDFUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696DC283B6C8800398CE9 /* PDFUtility.swift */; };
+		347696E1284359C700398CE9 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696E0284359C700398CE9 /* PictureView.swift */; };
+		347696E528435C7400398CE9 /* PictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347696E428435C7400398CE9 /* PictureView.xib */; };
+		347696E728436D9C00398CE9 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696E628436D9C00398CE9 /* DiaryView.swift */; };
+		347696E928436E0100398CE9 /* DiaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347696E828436E0100398CE9 /* DiaryView.xib */; };
+		347696EC2843762B00398CE9 /* AddDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696EA2843762B00398CE9 /* AddDiaryViewController.swift */; };
+		347696ED2843762B00398CE9 /* AddDiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347696EB2843762B00398CE9 /* AddDiaryViewController.xib */; };
+		347696F3284CC16500398CE9 /* PDFSizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696F2284CC16500398CE9 /* PDFSizeConstants.swift */; };
+		347696F5284CF49300398CE9 /* UserDefaultUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696F4284CF49300398CE9 /* UserDefaultUtility.swift */; };
+		347696F92853622100398CE9 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347696F72853622100398CE9 /* CarouselCollectionViewCell.swift */; };
+		347696FA2853622100398CE9 /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347696F82853622100398CE9 /* CarouselCollectionViewCell.xib */; };
+		34CBE050286AC07800516AD7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CBE04E286AC07800516AD7 /* SettingViewController.swift */; };
+		34CBE051286AC07800516AD7 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34CBE04F286AC07800516AD7 /* SettingViewController.xib */; };
+		34CBE054286D7CB300516AD7 /* AddAcountNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CBE052286D7CB300516AD7 /* AddAcountNameViewController.swift */; };
+		34CBE055286D7CB300516AD7 /* AddAcountNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34CBE053286D7CB300516AD7 /* AddAcountNameViewController.xib */; };
+		34CBE05928701E9000516AD7 /* PayPromotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CBE05728701E9000516AD7 /* PayPromotionViewController.swift */; };
+		34CBE05A28701E9000516AD7 /* PayPromotionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34CBE05828701E9000516AD7 /* PayPromotionViewController.xib */; };
+		34CBE05D28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CBE05B28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.swift */; };
+		34CBE05E28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34CBE05C28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.xib */; };
+		34CBE060287F028400516AD7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CBE05F287F028400516AD7 /* StoreKit.framework */; };
+		34CBE064288041B200516AD7 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CBE063288041B200516AD7 /* StoreKitManager.swift */; };
+		34F1A9052891311D00A58204 /* secretToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F1A9042891311D00A58204 /* secretToken.swift */; };
+		85B9FFE6EBA1D9EA0825628C /* Pods_albumdiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3398EB94D740715BDF38F5D9 /* Pods_albumdiary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		341EABE328362C7A00DAE91B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344F6ECE275CBC6F00B63625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344F6ED5275CBC6F00B63625;
+			remoteInfo = albumdiary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AC8C20C364D9DD498A3F4E3 /* Pods-albumdiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-albumdiary.release.xcconfig"; path = "Target Support Files/Pods-albumdiary/Pods-albumdiary.release.xcconfig"; sourceTree = "<group>"; };
+		3398EB94D740715BDF38F5D9 /* Pods_albumdiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_albumdiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		341EABDD28362C7A00DAE91B /* albumdiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = albumdiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		341EABDF28362C7A00DAE91B /* albumdiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumdiaryUITests.swift; sourceTree = "<group>"; };
+		341EABE128362C7A00DAE91B /* albumdiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumdiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		344F6ED6275CBC6F00B63625 /* albumdiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = albumdiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344F6ED9275CBC6F00B63625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		344F6EDB275CBC6F00B63625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		344F6EE2275CBC7200B63625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		344F6EE5275CBC7200B63625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		344F6EE7275CBC7200B63625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344F6F40275CC09C00B63625 /* ConfirmCalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCalenderViewController.swift; sourceTree = "<group>"; };
+		344F6F41275CC09C00B63625 /* ConfirmCalenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCalenderViewController.xib; sourceTree = "<group>"; };
+		344F6F4B275CC0F200B63625 /* FrontCoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCoverViewController.swift; sourceTree = "<group>"; };
+		344F6F4C275CC0F200B63625 /* FrontCoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontCoverViewController.xib; sourceTree = "<group>"; };
+		3461FBC6281E188B00B0DDE5 /* DiaryLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryLayoutManager.swift; sourceTree = "<group>"; };
+		3464996D27C0B070009A91DA /* DiaryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntity.swift; sourceTree = "<group>"; };
+		3464998127C0BB7C009A91DA /* EditTextModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextModalViewController.swift; sourceTree = "<group>"; };
+		3464998227C0BB7C009A91DA /* EditTextModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTextModalViewController.xib; sourceTree = "<group>"; };
+		3464998727C0BC82009A91DA /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		3464998D27C2221E009A91DA /* CalenderUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderUtility.swift; sourceTree = "<group>"; };
+		346840FC2837330800CD5A16 /* RealmUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtility.swift; sourceTree = "<group>"; };
+		347696D7283B699400398CE9 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		347696D8283B699400398CE9 /* PDFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFViewController.xib; sourceTree = "<group>"; };
+		347696DC283B6C8800398CE9 /* PDFUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFUtility.swift; sourceTree = "<group>"; };
+		347696E0284359C700398CE9 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		347696E428435C7400398CE9 /* PictureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureView.xib; sourceTree = "<group>"; };
+		347696E628436D9C00398CE9 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		347696E828436E0100398CE9 /* DiaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryView.xib; sourceTree = "<group>"; };
+		347696EA2843762B00398CE9 /* AddDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryViewController.swift; sourceTree = "<group>"; };
+		347696EB2843762B00398CE9 /* AddDiaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDiaryViewController.xib; sourceTree = "<group>"; };
+		347696F2284CC16500398CE9 /* PDFSizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSizeConstants.swift; sourceTree = "<group>"; };
+		347696F4284CF49300398CE9 /* UserDefaultUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtility.swift; sourceTree = "<group>"; };
+		347696F72853622100398CE9 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		347696F82853622100398CE9 /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		34CBE04C2854CEA200516AD7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		34CBE04E286AC07800516AD7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		34CBE04F286AC07800516AD7 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		34CBE052286D7CB300516AD7 /* AddAcountNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcountNameViewController.swift; sourceTree = "<group>"; };
+		34CBE053286D7CB300516AD7 /* AddAcountNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAcountNameViewController.xib; sourceTree = "<group>"; };
+		34CBE05728701E9000516AD7 /* PayPromotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPromotionViewController.swift; sourceTree = "<group>"; };
+		34CBE05828701E9000516AD7 /* PayPromotionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayPromotionViewController.xib; sourceTree = "<group>"; };
+		34CBE05B28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentFreePrintCountPerMonthViewController.swift; sourceTree = "<group>"; };
+		34CBE05C28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentFreePrintCountPerMonthViewController.xib; sourceTree = "<group>"; };
+		34CBE05F287F028400516AD7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		34CBE0622880404E00516AD7 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		34CBE063288041B200516AD7 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		34F1A9042891311D00A58204 /* secretToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretToken.swift; sourceTree = "<group>"; };
+		C7110ACF7B9CA8E678B3EE22 /* Pods-albumdiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-albumdiary.debug.xcconfig"; path = "Target Support Files/Pods-albumdiary/Pods-albumdiary.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		341EABDA28362C7A00DAE91B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344F6ED3275CBC6F00B63625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B9FFE6EBA1D9EA0825628C /* Pods_albumdiary.framework in Frameworks */,
+				34CBE060287F028400516AD7 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		023921EBDE18B96998368FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34CBE05F287F028400516AD7 /* StoreKit.framework */,
+				3398EB94D740715BDF38F5D9 /* Pods_albumdiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22BD88BF546DD13408070BCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7110ACF7B9CA8E678B3EE22 /* Pods-albumdiary.debug.xcconfig */,
+				0AC8C20C364D9DD498A3F4E3 /* Pods-albumdiary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		341EABDE28362C7A00DAE91B /* albumdiaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				341EABDF28362C7A00DAE91B /* albumdiaryUITests.swift */,
+				341EABE128362C7A00DAE91B /* albumdiaryUITestsLaunchTests.swift */,
+			);
+			path = albumdiaryUITests;
+			sourceTree = "<group>";
+		};
+		344F6ECD275CBC6F00B63625 = {
+			isa = PBXGroup;
+			children = (
+				344F6ED8275CBC6F00B63625 /* albumdiary */,
+				341EABDE28362C7A00DAE91B /* albumdiaryUITests */,
+				344F6ED7275CBC6F00B63625 /* Products */,
+				22BD88BF546DD13408070BCE /* Pods */,
+				023921EBDE18B96998368FF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		344F6ED7275CBC6F00B63625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344F6ED6275CBC6F00B63625 /* albumdiary.app */,
+				341EABDD28362C7A00DAE91B /* albumdiaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344F6ED8275CBC6F00B63625 /* albumdiary */ = {
+			isa = PBXGroup;
+			children = (
+				34CBE05628701E6500516AD7 /* Paid */,
+				34CBE04D286AC05800516AD7 /* Setting */,
+				347696F62853602500398CE9 /* Carousel */,
+				3464998C27C22204009A91DA /* Utility */,
+				344F6F2F275CBFA500B63625 /* PreparePDF */,
+				344F6F2E275CBF9100B63625 /* PostDiary */,
+				344F6ED9275CBC6F00B63625 /* AppDelegate.swift */,
+				344F6EDB275CBC6F00B63625 /* SceneDelegate.swift */,
+				344F6F4B275CC0F200B63625 /* FrontCoverViewController.swift */,
+				344F6F4C275CC0F200B63625 /* FrontCoverViewController.xib */,
+				344F6EE2275CBC7200B63625 /* Assets.xcassets */,
+				344F6EE4275CBC7200B63625 /* LaunchScreen.storyboard */,
+				344F6EE7275CBC7200B63625 /* Info.plist */,
+				34CBE0622880404E00516AD7 /* Configuration.storekit */,
+			);
+			path = albumdiary;
+			sourceTree = "<group>";
+		};
+		344F6F2E275CBF9100B63625 /* PostDiary */ = {
+			isa = PBXGroup;
+			children = (
+				3464998127C0BB7C009A91DA /* EditTextModalViewController.swift */,
+				3464998227C0BB7C009A91DA /* EditTextModalViewController.xib */,
+				3464998727C0BC82009A91DA /* PresentationController.swift */,
+				347696EA2843762B00398CE9 /* AddDiaryViewController.swift */,
+				347696EB2843762B00398CE9 /* AddDiaryViewController.xib */,
+			);
+			path = PostDiary;
+			sourceTree = "<group>";
+		};
+		344F6F2F275CBFA500B63625 /* PreparePDF */ = {
+			isa = PBXGroup;
+			children = (
+				344F6F40275CC09C00B63625 /* ConfirmCalenderViewController.swift */,
+				344F6F41275CC09C00B63625 /* ConfirmCalenderViewController.xib */,
+				347696D7283B699400398CE9 /* PDFViewController.swift */,
+				347696D8283B699400398CE9 /* PDFViewController.xib */,
+				347696E0284359C700398CE9 /* PictureView.swift */,
+				347696E428435C7400398CE9 /* PictureView.xib */,
+				347696E628436D9C00398CE9 /* DiaryView.swift */,
+				347696E828436E0100398CE9 /* DiaryView.xib */,
+			);
+			path = PreparePDF;
+			sourceTree = "<group>";
+		};
+		3464998C27C22204009A91DA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3464996D27C0B070009A91DA /* DiaryEntity.swift */,
+				3464998D27C2221E009A91DA /* CalenderUtility.swift */,
+				3461FBC6281E188B00B0DDE5 /* DiaryLayoutManager.swift */,
+				346840FC2837330800CD5A16 /* RealmUtility.swift */,
+				347696DC283B6C8800398CE9 /* PDFUtility.swift */,
+				347696F2284CC16500398CE9 /* PDFSizeConstants.swift */,
+				347696F4284CF49300398CE9 /* UserDefaultUtility.swift */,
+				34CBE063288041B200516AD7 /* StoreKitManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		347696F62853602500398CE9 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				347696F72853622100398CE9 /* CarouselCollectionViewCell.swift */,
+				347696F82853622100398CE9 /* CarouselCollectionViewCell.xib */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		34CBE04D286AC05800516AD7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				34CBE04E286AC07800516AD7 /* SettingViewController.swift */,
+				34CBE04F286AC07800516AD7 /* SettingViewController.xib */,
+				34CBE052286D7CB300516AD7 /* AddAcountNameViewController.swift */,
+				34CBE053286D7CB300516AD7 /* AddAcountNameViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		34CBE05628701E6500516AD7 /* Paid */ = {
+			isa = PBXGroup;
+			children = (
+				34CBE05728701E9000516AD7 /* PayPromotionViewController.swift */,
+				34CBE05828701E9000516AD7 /* PayPromotionViewController.xib */,
+				34CBE05B28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.swift */,
+				34CBE05C28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.xib */,
+				34F1A9042891311D00A58204 /* secretToken.swift */,
+			);
+			path = Paid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		341EABDC28362C7A00DAE91B /* albumdiaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341EABE528362C7A00DAE91B /* Build configuration list for PBXNativeTarget "albumdiaryUITests" */;
+			buildPhases = (
+				341EABD928362C7A00DAE91B /* Sources */,
+				341EABDA28362C7A00DAE91B /* Frameworks */,
+				341EABDB28362C7A00DAE91B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341EABE428362C7A00DAE91B /* PBXTargetDependency */,
+			);
+			name = albumdiaryUITests;
+			productName = albumdiaryUITests;
+			productReference = 341EABDD28362C7A00DAE91B /* albumdiaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		344F6ED5275CBC6F00B63625 /* albumdiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344F6EEA275CBC7200B63625 /* Build configuration list for PBXNativeTarget "albumdiary" */;
+			buildPhases = (
+				5373ADF4C29CF697A79B5934 /* [CP] Check Pods Manifest.lock */,
+				344F6ED2275CBC6F00B63625 /* Sources */,
+				344F6ED3275CBC6F00B63625 /* Frameworks */,
+				344F6ED4275CBC6F00B63625 /* Resources */,
+				20F6E45557CAD0153B1470E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = albumdiary;
+			productName = albumdiary;
+			productReference = 344F6ED6275CBC6F00B63625 /* albumdiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344F6ECE275CBC6F00B63625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					341EABDC28362C7A00DAE91B = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 344F6ED5275CBC6F00B63625;
+					};
+					344F6ED5275CBC6F00B63625 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 344F6ED1275CBC6F00B63625 /* Build configuration list for PBXProject "albumdiary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 344F6ECD275CBC6F00B63625;
+			productRefGroup = 344F6ED7275CBC6F00B63625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344F6ED5275CBC6F00B63625 /* albumdiary */,
+				341EABDC28362C7A00DAE91B /* albumdiaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		341EABDB28362C7A00DAE91B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344F6ED4275CBC6F00B63625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34CBE05A28701E9000516AD7 /* PayPromotionViewController.xib in Resources */,
+				347696E528435C7400398CE9 /* PictureView.xib in Resources */,
+				347696ED2843762B00398CE9 /* AddDiaryViewController.xib in Resources */,
+				347696FA2853622100398CE9 /* CarouselCollectionViewCell.xib in Resources */,
+				347696E928436E0100398CE9 /* DiaryView.xib in Resources */,
+				347696DA283B699400398CE9 /* PDFViewController.xib in Resources */,
+				344F6EE6275CBC7200B63625 /* LaunchScreen.storyboard in Resources */,
+				3464998427C0BB7C009A91DA /* EditTextModalViewController.xib in Resources */,
+				34CBE055286D7CB300516AD7 /* AddAcountNameViewController.xib in Resources */,
+				34CBE051286AC07800516AD7 /* SettingViewController.xib in Resources */,
+				344F6F43275CC09C00B63625 /* ConfirmCalenderViewController.xib in Resources */,
+				344F6EE3275CBC7200B63625 /* Assets.xcassets in Resources */,
+				344F6F4E275CC0F200B63625 /* FrontCoverViewController.xib in Resources */,
+				34CBE05E28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20F6E45557CAD0153B1470E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-albumdiary/Pods-albumdiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-albumdiary/Pods-albumdiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-albumdiary/Pods-albumdiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5373ADF4C29CF697A79B5934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-albumdiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		341EABD928362C7A00DAE91B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341EABE228362C7A00DAE91B /* albumdiaryUITestsLaunchTests.swift in Sources */,
+				341EABE028362C7A00DAE91B /* albumdiaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344F6ED2275CBC6F00B63625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344F6F4D275CC0F200B63625 /* FrontCoverViewController.swift in Sources */,
+				3464996E27C0B070009A91DA /* DiaryEntity.swift in Sources */,
+				347696E1284359C700398CE9 /* PictureView.swift in Sources */,
+				34F1A9052891311D00A58204 /* secretToken.swift in Sources */,
+				34CBE05928701E9000516AD7 /* PayPromotionViewController.swift in Sources */,
+				3464998E27C2221E009A91DA /* CalenderUtility.swift in Sources */,
+				347696F92853622100398CE9 /* CarouselCollectionViewCell.swift in Sources */,
+				34CBE054286D7CB300516AD7 /* AddAcountNameViewController.swift in Sources */,
+				3461FBC7281E188B00B0DDE5 /* DiaryLayoutManager.swift in Sources */,
+				344F6EDA275CBC6F00B63625 /* AppDelegate.swift in Sources */,
+				347696E728436D9C00398CE9 /* DiaryView.swift in Sources */,
+				344F6EDC275CBC6F00B63625 /* SceneDelegate.swift in Sources */,
+				347696F5284CF49300398CE9 /* UserDefaultUtility.swift in Sources */,
+				347696EC2843762B00398CE9 /* AddDiaryViewController.swift in Sources */,
+				347696D9283B699400398CE9 /* PDFViewController.swift in Sources */,
+				346840FD2837330800CD5A16 /* RealmUtility.swift in Sources */,
+				34CBE064288041B200516AD7 /* StoreKitManager.swift in Sources */,
+				3464998327C0BB7C009A91DA /* EditTextModalViewController.swift in Sources */,
+				344F6F42275CC09C00B63625 /* ConfirmCalenderViewController.swift in Sources */,
+				3464998827C0BC82009A91DA /* PresentationController.swift in Sources */,
+				34CBE050286AC07800516AD7 /* SettingViewController.swift in Sources */,
+				347696DD283B6C8800398CE9 /* PDFUtility.swift in Sources */,
+				347696F3284CC16500398CE9 /* PDFSizeConstants.swift in Sources */,
+				34CBE05D28701EA900516AD7 /* PresentFreePrintCountPerMonthViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		341EABE428362C7A00DAE91B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344F6ED5275CBC6F00B63625 /* albumdiary */;
+			targetProxy = 341EABE328362C7A00DAE91B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		344F6EE4275CBC7200B63625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344F6EE5275CBC7200B63625 /* Base */,
+				34CBE04C2854CEA200516AD7 /* ja */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		341EABE628362C7A00DAE91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 5YR2PS8BM3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.birth.karin.albumdiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = albumdiary;
+			};
+			name = Debug;
+		};
+		341EABE728362C7A00DAE91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 5YR2PS8BM3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.birth.karin.albumdiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = albumdiary;
+			};
+			name = Release;
+		};
+		344F6EE8275CBC7200B63625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		344F6EE9275CBC7200B63625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		344F6EEB275CBC7200B63625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7110ACF7B9CA8E678B3EE22 /* Pods-albumdiary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.7;
+				DEVELOPMENT_TEAM = 5YR2PS8BM3;
+				INFOPLIST_FILE = albumdiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.birth.karin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = bil.com.birth.karin;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		344F6EEC275CBC7200B63625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC8C20C364D9DD498A3F4E3 /* Pods-albumdiary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.7;
+				DEVELOPMENT_TEAM = 5YR2PS8BM3;
+				INFOPLIST_FILE = albumdiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.birth.karin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.birth.karin;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		341EABE528362C7A00DAE91B /* Build configuration list for PBXNativeTarget "albumdiaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341EABE628362C7A00DAE91B /* Debug */,
+				341EABE728362C7A00DAE91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344F6ED1275CBC6F00B63625 /* Build configuration list for PBXProject "albumdiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344F6EE8275CBC7200B63625 /* Debug */,
+				344F6EE9275CBC7200B63625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344F6EEA275CBC7200B63625 /* Build configuration list for PBXNativeTarget "albumdiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344F6EEB275CBC7200B63625 /* Debug */,
+				344F6EEC275CBC7200B63625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344F6ECE275CBC6F00B63625 /* Project object */;
+}

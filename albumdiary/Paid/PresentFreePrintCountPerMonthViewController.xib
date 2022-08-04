@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PresentFreePrintCountPerMonthViewController" customModule="albumdiary" customModuleProvider="target">
+            <connections>
+                <outlet property="freePrintCountLabel" destination="SCp-hd-ybg" id="kaB-z2-EhW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="present" translatesAutoresizingMaskIntoConstraints="NO" id="AGx-wJ-tUT">
+                    <rect key="frame" x="50" y="104" width="314" height="235.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AGx-wJ-tUT" secondAttribute="height" multiplier="4:3" id="dre-P3-K2y"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zal-oS-67V">
+                    <rect key="frame" x="55.5" y="379.5" width="303.5" height="143.5"/>
+                    <string key="text">今月の無料印刷枚数を
+　プレゼント！
+
+沢山印刷してね</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCp-hd-ybg">
+                    <rect key="frame" x="116" y="573" width="182" height="72"/>
+                    <string key="text">印刷可能枚数
+0枚 → 10枚</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dy4-T1-Ayz">
+                    <rect key="frame" x="164.5" y="695" width="85.5" height="38"/>
+                    <color key="tintColor" name="Basic"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="閉じる">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="ah5-8N-gM2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="MainColor"/>
+            <constraints>
+                <constraint firstItem="zal-oS-67V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Ka-NK-jMy"/>
+                <constraint firstItem="AGx-wJ-tUT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Cdg-pA-HPT"/>
+                <constraint firstItem="dy4-T1-Ayz" firstAttribute="top" secondItem="SCp-hd-ybg" secondAttribute="bottom" constant="50" id="Czb-Z0-QDb"/>
+                <constraint firstItem="AGx-wJ-tUT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="Vgd-Gm-Ili"/>
+                <constraint firstAttribute="trailing" secondItem="AGx-wJ-tUT" secondAttribute="trailing" constant="50" id="W0j-vT-q2y"/>
+                <constraint firstItem="AGx-wJ-tUT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lGN-en-DmO"/>
+                <constraint firstItem="SCp-hd-ybg" firstAttribute="top" secondItem="zal-oS-67V" secondAttribute="bottom" constant="50" id="ngl-5B-0xp"/>
+                <constraint firstItem="zal-oS-67V" firstAttribute="top" secondItem="AGx-wJ-tUT" secondAttribute="bottom" constant="40" id="q1z-01-czR"/>
+                <constraint firstItem="SCp-hd-ybg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uPi-pJ-Vbu"/>
+                <constraint firstItem="dy4-T1-Ayz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wDr-bJ-lfk"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="54.910714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="present" width="1920" height="1785"/>
+        <namedColor name="Basic">
+            <color red="0.78431372549019607" green="0.31372549019607843" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.92156862745098034" green="0.82745098039215681" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FrontCoverViewController" customModule="albumdiary" customModuleProvider="target">
+            <connections>
+                <outlet property="calenderView" destination="aQ5-jC-nav" id="DzP-U4-syx"/>
+                <outlet property="collectionView" destination="Gqc-bp-HWz" id="2x6-gE-FpU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQ5-jC-nav" customClass="FSCalendar">
+                    <rect key="frame" x="10" y="44" width="408" height="306"/>
+                    <color key="backgroundColor" name="MainColor"/>
+                    <color key="tintColor" name="Accent"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aQ5-jC-nav" secondAttribute="height" multiplier="4:3" id="Y7a-K2-3iK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy年 MM月"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                            <color key="value" name="Basic"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                            <color key="value" name="Accent"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                            <color key="value" name="Basic"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                            <color key="value" name="Accent"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                            <color key="value" name="Accent"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="815-sS-m8K"/>
+                        <outlet property="delegate" destination="-1" id="Ruz-Qp-Y3P"/>
+                    </connections>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gqc-bp-HWz">
+                    <rect key="frame" x="0.0" y="370" width="428" height="512"/>
+                    <color key="backgroundColor" name="MainColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A5g-Zb-WB9">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7Gp-px-hUS"/>
+                        <outlet property="delegate" destination="-1" id="7b0-A8-OLF"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="MainColor"/>
+            <constraints>
+                <constraint firstItem="aQ5-jC-nav" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="EGD-XX-gEK"/>
+                <constraint firstItem="Gqc-bp-HWz" firstAttribute="top" secondItem="aQ5-jC-nav" secondAttribute="bottom" constant="20" id="J24-8x-hAP"/>
+                <constraint firstAttribute="trailing" secondItem="aQ5-jC-nav" secondAttribute="trailing" constant="10" id="UJ6-2w-cpN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Gqc-bp-HWz" secondAttribute="bottom" constant="10" id="WOr-u7-uhW"/>
+                <constraint firstItem="Gqc-bp-HWz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YfE-ke-NZg"/>
+                <constraint firstItem="aQ5-jC-nav" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dKM-ca-1cW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gqc-bp-HWz" secondAttribute="trailing" id="t86-NQ-Jon"/>
+            </constraints>
+            <point key="canvasLocation" x="110.74766355140186" y="108.20734341252701"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Accent">
+            <color red="0.66666666666666663" green="0.78431372549019607" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Basic">
+            <color red="0.78431372549019607" green="0.31372549019607843" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.92156862745098034" green="0.82745098039215681" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

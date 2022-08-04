@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditTextModalViewController" customModule="albumdiary" customModuleProvider="target">
+            <connections>
+                <outlet property="alertTextLabel" destination="vwL-Wb-mkN" id="VEi-PS-Nlf"/>
+                <outlet property="completeButton" destination="OcZ-92-49s" id="fKl-En-NDE"/>
+                <outlet property="textView" destination="YnB-0L-A7z" id="2w2-W7-5ky"/>
+                <outlet property="titleLabel" destination="hZB-Vk-fAD" id="ffV-M7-XIH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5LK-fx-VwA">
+                    <rect key="frame" x="30" y="64" width="354" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日記" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZB-Vk-fAD">
+                            <rect key="frame" x="0.0" y="0.0" width="107" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最大20字です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwL-Wb-mkN" userLabel="最大200字です">
+                            <rect key="frame" x="107" y="0.0" width="0.0" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="systemPinkColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXL-f6-bbV">
+                            <rect key="frame" x="107" y="0.0" width="167" height="40"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-92-49s">
+                            <rect key="frame" x="274" y="0.0" width="80" height="40"/>
+                            <color key="backgroundColor" name="Accent"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="TTr-a5-chv"/>
+                                <constraint firstAttribute="width" constant="80" id="zgH-DM-2eD"/>
+                            </constraints>
+                            <state key="normal" title="投稿">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <connections>
+                                <action selector="tapCompleteButton:" destination="-1" eventType="touchUpInside" id="KN4-ED-Ens"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YnB-0L-A7z">
+                    <rect key="frame" x="30" y="124" width="354" height="708"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="MainColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YnB-0L-A7z" secondAttribute="bottom" constant="30" id="0Lx-No-O3p"/>
+                <constraint firstItem="5LK-fx-VwA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="3ud-eA-Wcm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YnB-0L-A7z" secondAttribute="trailing" constant="30" id="Ahf-bg-p7Z"/>
+                <constraint firstItem="YnB-0L-A7z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="LXY-1Q-FDF"/>
+                <constraint firstItem="YnB-0L-A7z" firstAttribute="top" secondItem="5LK-fx-VwA" secondAttribute="bottom" constant="20" id="e3s-ay-aVk"/>
+                <constraint firstItem="5LK-fx-VwA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="lbF-el-j3z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5LK-fx-VwA" secondAttribute="trailing" constant="30" id="pAa-8S-bUs"/>
+            </constraints>
+            <point key="canvasLocation" x="53.623188405797109" y="49.553571428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Accent">
+            <color red="0.66666666666666663" green="0.78431372549019607" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.92156862745098034" green="0.82745098039215681" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
