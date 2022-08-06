@@ -18,6 +18,7 @@ com.birth.karin
 ```
 
 ```
+シークレットトークンの作成
 albumdiary/albumdiary/Paid/secretToken.swift
 変数secretTokenを作成
 ```
