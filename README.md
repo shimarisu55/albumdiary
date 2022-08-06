@@ -3,6 +3,21 @@
 Pods更新
 
 ```
+プロヴィジョニングファイル作成
+開発
+dev.com.birth.karin
+
+開発（課金確認用）
+com.birth.karin
+
+リリース（deploygate）
+adhoc.com.birth.karin
+
+リリース
+com.birth.karin
+```
+
+```
 albumdiary/albumdiary/Paid/secretToken.swift
 変数secretTokenを作成
 ```
